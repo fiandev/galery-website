@@ -1,0 +1,30 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 20px;
+}
+ul li {
+  list-style: none;
+}
+.info,.copyright,p {
+  text-align: center;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+}
+.info li {
+  text-align: left;
+}
+.info li a {
+  text-transform: lowercase;
+  display: block;
+}
+.info li a:hover {
+  padding: 10px 0px;
+  text-decoration: none;
+}
+.copyright li {
+  text-align: center;
+  text-transform: uppercase;
+}

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="description" content="About tools on this page">
+    <title>About Tools</title>
+    <link rel="shortcut icon" href="/img/ryuu.png" type="image/x-icon" />
+    <link rel="stylesheet" href="aboutPage.css" type="text/css" media="all" />
+  </head>
+  <body>
+     <ul class="info">
+  List Method Get on this site
+<li>Get a random image : <a href='?api=random'>?api=random</a></li>
+<li>Get list image (JSON extension) : <a href='?random=10'>?random=10</a> </li>
+<li>Get a image from post <a href='?image=1'>?image=1</a></li>
+<li>Get all data (JSON extension) <a href='?alldata=true'>?alldata=(true or false)</a></li>
+  </ul>
+  <p>powered by :</p>
+  <ul class="copyright">
+    <li>html 5</li>
+    <li>css 3</li>
+    <li>javascript</li>
+    <li>php 8.0.6</li>
+  </ul>
+  <script src="/framework/jquery-3.6.0.min.js" type="text/javascript" charset="utf-8"></script>
+  <script type="text/javascript" charset="utf-8">
+    var IsDark = matchMedia('(prefers-color-scheme: dark)').matches;
+  if(IsDark){
+    $("*:not(a)").css("color","#fff");
+    $("a").css("color","skyblue");
+    $("*").css("background","#000");
+  }
+  
+  </script>
+  </body>
+</html>

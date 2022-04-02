@@ -1,0 +1,11 @@
+function get_curl($url){
+  $curl = curl_init();
+  curl_setopt($curl,CURLOPT_URL, $url);
+  curl_setopt($curl,CURLOPT_RETURNTRANSFER,true);
+  $result = curl_exec($curl);
+  curl_close($curl);
+  return json_decode($result,true);
+}
+$apikey = "AIzaSyDO2dv12hNVuiL0O62L8BDIZnJnzdnMEVQ";
+$tes = get_curl("https://www.googleapis.com/customsearch/v1?key=$apikey&cx=013036536707430787589:_pqjad5hr1a&gl=id&cr=id&googlehost=google.id&q=hello&alt=json");
+var_dump($tes);
